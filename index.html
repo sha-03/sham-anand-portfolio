@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sham Anand — Machine Learning Engineer &amp; AI Specialist</title>
+  <meta name="description" content="Portfolio of Sham Anand, Machine Learning Engineer specializing in Deep Learning, Computer Vision, NLP, LLMs, and Generative AI.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/v5-motion.css"></head>
+<body>
+
+  <!-- HIDDEN SVG FILTERS FOR TYPOGRAPHY WARP / MELT EFFECT -->
+  <svg class="svg-filters" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none;">
+    <defs>
+      <filter id="typography-warp" x="-30%" y="-30%" width="160%" height="160%">
+        <feTurbulence id="warp-turbulence" type="fractalNoise" baseFrequency="0.012 0.035" numOctaves="2" result="noise" seed="2" />
+        <feDisplacementMap id="warp-displacement" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+
+
+  <!-- DESKTOP CUSTOM CURSOR -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div><span class="cursor-text"></span></div>
+
+  <!-- 1. INTRO PRELOADER & CINEMATIC REVEAL (Black Screen -> 'hello' -> Cream Panel Expansion) -->
+  <div id="intro-screen" class="intro-screen">
+    <!-- Center handwritten hello -->
+    <div id="intro-hello" class="intro-hello">hello</div>
+  </div>
+
+  <!-- CREAM PANEL REVEAL MASK -->
+  <div id="cream-reveal-curtain" class="cream-reveal-curtain"></div>
+
+<a class="studio-mark" href="#hero" aria-label="Sham Anand home">Sham Anand</a>
+  <div class="rail-shell" id="rail-shell">
+    <button class="rail-toggle" id="rail-toggle" aria-label="Open navigation" aria-controls="right-menu" aria-expanded="false"><span class="menu-caption">MENU</span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    <nav class="right-menu" id="right-menu" aria-label="Main navigation">
+      <p class="menu-eyebrow">EXPLORE</p><ol><li><a href="#hero" class="rail-link" aria-label="Home"><span class="rail-number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3Z"/></svg></span><span class="rail-label">Home</span></a></li><li><a href="#about" class="rail-link" aria-label="About"><span class="rail-number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></svg></span><span class="rail-label">About Me</span></a></li><li><a href="#work" class="rail-link" aria-label="Projects"><span class="rail-number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M8 5V2h8v3M3 11h18"/></svg></span><span class="rail-label">Projects</span></a></li><li><a href="#expertise" class="rail-link" aria-label="Expertise"><span class="rail-number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m8 5-6 7 6 7m8-14 6 7-6 7M14 3l-4 18"/></svg></span><span class="rail-label">Expertise</span></a></li><li><a href="#credentials" class="rail-link" aria-label="Credentials"><span class="rail-number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8 14-2 8 6-3 6 3-2-8"/></svg></span><span class="rail-label">Credentials</span></a></li><li><a href="#contact" class="rail-link" aria-label="Contact"><span class="rail-number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 6 10 7 10-7"/></svg></span><span class="rail-label">Contact</span></a></li></ol><a class="menu-email" href="mailto:shamanand1358@gmail.com">GET IN TOUCH<br>shamanand1358@gmail.com ↗</a>
+      <div class="rail-tools"><button id="portfolio-sound" type="button" aria-pressed="false" aria-label="Enable sound"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9h4l5-4v14l-5-4H4Z"/><path class="sound-waves" d="M16 8c3 2 3 6 0 8m2-11c5 4 5 10 0 14"/><path class="sound-slash" d="m16 9 6 6m0-6-6 6"/></svg></button><button id="portfolio-theme" type="button" aria-label="Switch theme">◐<span class="sr-only">Theme</span></button></div>
+    </nav>
+  </div>
+  <div class="reading-progress" aria-hidden="true"><i></i></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><div class="transition-cover"></div><svg class="transition-spiral" preserveAspectRatio="none"><path fill="none" stroke-linecap="round"/></svg><canvas class="transition-ink"></canvas><svg class="lens-zoom" width="100%" height="100%" preserveAspectRatio="none"><defs><mask id="binocular-iris" maskUnits="userSpaceOnUse" style="mask-type:alpha"><circle class="iris-circle" r="20"/><circle class="iris-circle" r="20"/></mask></defs><rect width="100%" height="100%" mask="url(#binocular-iris)"/></svg></div>
+  <main id="main-content">
+    
+    <!-- 3. HERO SECTION (Cream background #EFE9DD, near-black text) -->
+    <section id="hero" class="hero-section">
+      <!-- Lightweight Neural Background Canvas -->
+      <canvas id="hero-neural-canvas" class="hero-neural-canvas"></canvas>
+      
+      <div class="hero-container">
+        
+        <div class="hero-badge-top">
+          <span class="pill-badge"><span class="pulse-dot"></span> AVAILABLE FOR AI/ML ROLES &amp; RESEARCH</span>
+        </div>
+
+        <!-- Massive edge-to-edge typography with Warp/Melt Effect -->
+        <div class="hero-headline-wrap" id="hero-headline-interactive">
+          <div class="hero-title-line-mask line-aiml">
+            <h1 class="hero-title-word word-aiml warp-target" id="warp-title-1">AI / ML</h1>
+          </div>
+          <div class="hero-title-line-mask line-engineer">
+            <h2 class="hero-title-sub word-engineer warp-target" id="warp-title-2">ENGINEER</h2>
+          </div>
+        </div>
+
+        <!-- Tag row -->
+        <div class="hero-tags-row">
+          <span class="tag-item">COMPUTER VISION</span>
+          <span class="tag-dot">•</span>
+          <span class="tag-item">DEEP LEARNING</span>
+          <span class="tag-dot">•</span>
+          <span class="tag-item">GENERATIVE AI</span>
+        </div>
+
+        <!-- Hero middle / interactive scroll cue -->
+        <div class="hero-scroll-cue">
+          <a href="#about" class="scroll-explore-link" data-cursor="hover">
+            <span class="scroll-text">SCROLL TO EXPLORE</span>
+            <div class="scroll-icon-wrap">
+              <svg class="arrow-down-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- Hero Bottom Bar -->
+        <div class="hero-bottom-bar">
+          <!-- Bottom Left: Copyright in script font -->
+          <div class="hero-copyright">
+            <span class="script-text">©2026 Sham Anand</span>
+            <span class="copy-sub">Pioneering AI &amp; Predictive Machine Intelligence</span>
+          </div>
+
+          <!-- Bottom Right: Circular Rotating Badge & Location -->
+          <div class="hero-badge-container">
+            <div class="circular-badge-wrap" data-cursor="hover">
+              <svg class="circular-badge-svg" viewBox="0 0 160 160">
+                <path id="circlePath" d="M 80, 80 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" fill="none" />
+                <text class="circular-text">
+                  <textPath xlink:href="#circlePath" startOffset="0%">
+                    LET'S BUILD INTELLIGENT APPS • SHAM ANAND •
+                  </textPath>
+                </text>
+              </svg>
+              <div class="badge-center-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H9M17 7V15"/>
+                </svg>
+              </div>
+            </div>
+            <div class="location-badge">
+              <span class="loc-country">BASED IN PUDUCHERRY, INDIA</span>
+              <span class="loc-time" id="local-time">--:-- PM IST</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. ABOUT SECTION (Near-black background #0A0A0A) -->
+    <section id="about" class="about-section dark-section">
+      <div class="section-container">
+        
+        <!-- Eyebrow & Gold Heading with Wavy Divider -->
+        <div class="section-header-wrap">
+          <span class="section-eyebrow">02 — THE PERSON BEHIND THE WORK</span>
+          <h2 class="section-title gold-title">ABOUT ME</h2>
+          <div class="wavy-divider-svg">
+            <svg viewBox="0 0 400 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 12C40 2 60 22 100 12C140 2 160 22 200 12C240 2 260 22 300 12C340 2 360 22 400 12" stroke="#C9A876" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Two-column Layout -->
+        <div class="about-grid">
+          
+          <!-- Left: Advanced AI Engineer Portrait & Neural HUD Card -->
+          <div class="about-image-col">
+            <div class="portrait-card" id="portrait-interactive-card">
+              <div class="portrait-frame ai-portrait-frame">
+                
+                <!-- Technical HUD Top Bar -->
+                <div class="neural-hud-top">
+                  <div class="hud-status-node">
+                    <span class="status-live-dot"></span>
+                    <span class="hud-node-label">STATUS: ACTIVE // INFERENCE</span>
+                  </div>
+                  <span class="hud-latency-label">FP16 • 120 FPS</span>
+                </div>
+
+                <div class="portrait-img-inner ai-portrait-wrapper" data-cursor="hover">
+                  <!-- Ambient Glowing Background Aura & Neural Grid -->
+                  <div class="portrait-bg-glow" id="portrait-glow"></div>
+                  <div class="portrait-grid-matrix"></div>
+
+                  <!-- Reticle HUD Frame Corners -->
+                  <div class="reticle-corner reticle-tl"></div>
+                  <div class="reticle-corner reticle-tr"></div>
+                  <div class="reticle-corner reticle-bl"></div>
+                  <div class="reticle-corner reticle-br"></div>
+
+                  <!-- Laser Scan Line Effect -->
+                  <div class="neural-scanline"></div>
+
+                  <!-- Sham Anand 3D Character Cutout -->
+                  <div class="portrait-photo-container">
+                    <img src="./assets/images/character-3d-full.webp" alt="Sham Anand — 3D Character" class="portrait-cutout-img" id="portrait-cutout">
+                  </div>
+
+                  <!-- Floating Target Reticle Badge -->
+                  <div class="hud-target-box">
+                    <span class="target-dot"></span>
+                    <span class="target-label">AI_VISION: TRACKING</span>
+                  </div>
+
+                  <!-- Telemetry Metrics Overlay -->
+                  <div class="neural-telemetry-hud">
+                    <div class="hud-chip"><span>ACCURACY</span> <strong>98.7%</strong></div>
+                    <div class="hud-chip"><span>EXPERTISE</span> <strong>DEEP LEARNING</strong></div>
+                    <div class="hud-chip"><span>FRAMEWORK</span> <strong>PYTORCH / TF</strong></div>
+                  </div>
+                </div>
+
+                <!-- Footer Tag Bar -->
+                <div class="portrait-tag">
+                  <span class="portrait-tag-dot"></span>
+                  <span>SHAM ANAND // ML &amp; AI SPECIALIST</span>
+                </div>
+              </div>
+
+              <div class="portrait-quote-card">
+                <span class="script-small">"Bridging deep neural architecture with real-world intelligence."</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative + Stats Grid -->
+          <div class="about-content-col">
+            <span class="about-sublabel">— WHO AM I?</span>
+            
+            <h3 class="about-hero-text">
+              I BUILD <span class="highlight-gold">INTELLIGENT SYSTEMS</span> WHERE <span class="highlight-gold">DEEP LEARNING</span> MEETS <span class="highlight-white">REAL-WORLD IMPACT</span>.
+            </h3>
+
+            <div class="about-paragraphs">
+              <p>
+                I am a passionate Machine Learning Engineer specializing in building intelligent, real-world AI solutions using Python and modern machine learning technologies. My expertise spans Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and Generative AI.
+              </p>
+              <p>
+                I enjoy transforming complex problems into practical solutions—from predictive models and AI-powered chatbots to real-time object detection and intelligent language applications. With hands-on experience in TensorFlow, PyTorch, Scikit-learn, OpenAI GPT, and SQL, I focus on building scalable and impactful AI systems.
+              </p>
+              <p>
+                Supported by certifications in Artificial Intelligence and Cloud technologies, I continuously explore emerging AI technologies and strengthen my skills through hands-on projects. My goal is to create intelligent systems that solve meaningful real-world problems and make a lasting impact.
+              </p>
+            </div>
+
+            <!-- 2-row x 3-column Stats Grid based on Resume -->
+            <div class="stats-grid">
+              <div class="stat-card" data-cursor="hover">
+                <span class="stat-label">BASED</span>
+                <span class="stat-val">Puducherry, India</span>
+              </div>
+              <div class="stat-card" data-cursor="hover">
+                <span class="stat-label">FOCUS</span>
+                <span class="stat-val">ML / GenAI / CV</span>
+              </div>
+              <div class="stat-card" data-cursor="hover">
+                <span class="stat-label">EXPERIENCE</span>
+                <span class="stat-val">GUVI | HCLTech (2025-26)</span>
+              </div>
+              <div class="stat-card" data-cursor="hover">
+                <span class="stat-label">MINDSET</span>
+                <span class="stat-val">ALWAYS LEARNING</span>
+              </div>
+              <div class="stat-card" data-cursor="hover">
+                <span class="stat-label">PROJECTS DONE</span>
+                <span class="stat-val">10+ AI Models</span>
+              </div>
+              <div class="stat-card" data-cursor="hover">
+                <span class="stat-label">EDUCATION</span>
+                <span class="stat-val">B.S. Comp Sci (2028)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. EXPERTISE SECTION (Near-black background) -->
+    <div class="elastic-divider" aria-hidden="true"><svg viewBox="0 0 1000 70" preserveAspectRatio="none"><path d="M0 35 Q500 35 1000 35"/></svg></div>
+    <section id="expertise" class="expertise-section dark-section">
+      <div class="section-container">
+        
+        <div class="section-header-wrap">
+          <span class="section-eyebrow">03 — TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title gold-title">MY EXPERTISE</h2>
+        </div>
+
+        <div class="expertise-grid">
+          
+          <!-- Left Column: Heading, intro, tech stack badges & floating decorative icons -->
+          <div class="expertise-left-col">
+            <h3 class="expertise-main-title">
+              CORE <span class="text-white">AI TOOLKIT</span> &amp; <span class="highlight-gold">CAPABILITIES</span>
+            </h3>
+            
+            <p class="expertise-intro-p">
+              Proficient in designing, training, and deploying high-accuracy deep learning models, prompt-engineered LLM agents, and real-time computer vision pipelines.
+            </p>
+
+            <!-- Floating AI/ML Technical Elements Cluster -->
+            <div class="floating-ai-elements-cluster">
+              <div class="floating-ai-node float-node-1">
+                <span class="node-badge-icon">🧠</span>
+                <span class="node-badge-txt">NEURAL_NET // 3-LAYER MLP</span>
+              </div>
+              <div class="floating-ai-node float-node-2">
+                <span class="node-indicator-dot cyan"></span>
+                <span class="node-badge-txt">WEIGHT_TENSORS: 4.8M</span>
+              </div>
+              <div class="floating-ai-node float-node-3">
+                <span class="node-indicator-dot green"></span>
+                <span class="node-badge-txt">CV_YOLOv8: ACC 99.4%</span>
+              </div>
+              <div class="floating-ai-node float-node-4">
+                <span class="node-indicator-dot purple"></span>
+                <span class="node-badge-txt">INFERENCE: 12ms // FP16</span>
+              </div>
+              <div class="floating-ai-node float-node-5">
+                <span class="node-indicator-dot gold"></span>
+                <span class="node-badge-txt">EMBEDDINGS: 1536-D</span>
+              </div>
+            </div>
+
+            <!-- Tech Badges Cloud from Resume -->
+            <div class="tech-badge-cloud">
+              <span class="tech-pill" data-cursor="hover">Python</span>
+              <span class="tech-pill" data-cursor="hover">TensorFlow</span>
+              <span class="tech-pill" data-cursor="hover">PyTorch</span>
+              <span class="tech-pill" data-cursor="hover">OpenAI GPT</span>
+              <span class="tech-pill" data-cursor="hover">Deep Learning</span>
+              <span class="tech-pill" data-cursor="hover">Computer Vision</span>
+              <span class="tech-pill" data-cursor="hover">OpenCV</span>
+              <span class="tech-pill" data-cursor="hover">NLP &amp; BERT</span>
+              <span class="tech-pill" data-cursor="hover">spaCy</span>
+              <span class="tech-pill" data-cursor="hover">Scikit-learn</span>
+              <span class="tech-pill" data-cursor="hover">SQL</span>
+              <span class="tech-pill" data-cursor="hover">Pandas &amp; NumPy</span>
+              <span class="tech-pill" data-cursor="hover">Prompt Engineering</span>
+              <span class="tech-pill" data-cursor="hover">Docker &amp; Git</span>
+              <span class="tech-pill" data-cursor="hover">JavaScript</span>
+            </div>
+
+            <!-- Floating 3D-styled decorative card -->
+            <div class="floating-tech-card" data-cursor="hover">
+              <div class="float-icon-box">
+                <span class="float-emoji">⚡</span>
+                <div>
+                  <h4>Optimized Inference Architecture</h4>
+                  <p>Quantization, low-latency prediction &amp; scalable model deployment.</p>
+                </div>
+              </div>
+            </div>
+
+<div class="intelligence-lab">
+ <div class="network-explorer"><h4>Trace an idea</h4><p>Choose a focus, then activate a node.</p><div class="network-modes" role="group" aria-label="Neural network focus"><button type="button" data-network="Python" aria-pressed="true">Python</button><button type="button" data-network="NLP" aria-pressed="false">NLP</button><button type="button" data-network="Computer Vision" aria-pressed="false">Vision</button></div><div class="network-stage"><svg viewBox="0 0 360 190" aria-hidden="true" class="network-wires"></svg><div class="network-nodes"></div></div><p class="network-status" aria-live="polite">Python connects data, models and applications.</p></div>
+ <div class="digit-demo"><h4>Draw a digit. Meet a model.</h4><p>A small neural network running in your browser.</p><div class="digit-layout"><canvas id="digit-pad" width="192" height="192" tabindex="0" aria-label="Draw one digit using a pointer, or choose a sample below"></canvas><div><label for="digit-sample">Try a sample</label><select id="digit-sample"><option value="">Choose a digit</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><button type="button" id="digit-predict">Recognise</button><button type="button" id="digit-clear">Clear</button></div></div><p id="digit-result" aria-live="polite">Draw one large digit from 0–9.</p><small>Trained on 8×8 handwritten digits. Your handwriting may differ; predictions can be wrong.</small></div>
+</div>
+          </div>
+
+          <!-- Right Column: Interactive Accordion of 4 Expertise Cards with Live Telemetry -->
+          <div class="expertise-right-col">
+            <div class="accordion-container">
+              
+              <!-- Accordion Card 01: Computer Vision with 3D Glitch Arc Carousel -->
+              <div class="accordion-item is-active" data-index="1" data-cursor="hover">
+                <div class="accordion-header">
+                  <span class="item-num">01</span>
+                  <div class="item-title-group">
+                    <h3 class="item-title">Computer Vision &amp; Object Detection</h3>
+                    <p class="item-short">Identifying vehicles, pedestrians, obstacles, and image segmentation.</p>
+                  </div>
+                  <div class="item-toggle-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7H9M17 7V15"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner vision-carousel-layout">
+                    <p class="body-desc">
+                      Developing real-time vision pipelines with OpenCV, TensorFlow, and PyTorch for autonomous driving, obstacle classification, and bounding-box tracking with high precision.
+                    </p>
+                    
+                    <!-- 3D Glitch Arc Carousel Component -->
+                    <div class="item-thumbnail-preview cv-glitch-preview">
+                      <div class="glitch-carousel-wrapper" id="cv-glitch-carousel">
+                        <!-- 3D Arc Stage -->
+                        <div class="carousel-arc-stage">
+                          <div class="carousel-card card-pos-0" data-pos="0">
+                            <div class="card-inner">
+                              <span class="hud-tag">CAM_01</span>
+                              <div class="vision-scan-box box-vehicle"></div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-1" data-pos="1">
+                            <div class="card-inner">
+                              <span class="hud-tag">CAM_02</span>
+                              <div class="vision-scan-box box-pedestrian"></div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-2" data-pos="2">
+                            <div class="card-inner">
+                              <span class="hud-tag">LIVE_INFERENCE</span>
+                              <div class="vision-scan-box box-active"></div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-3" data-pos="3">
+                            <div class="card-inner">
+                              <span class="hud-tag">CAM_04</span>
+                              <div class="vision-scan-box box-sign"></div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-4" data-pos="4">
+                            <div class="card-inner">
+                              <span class="hud-tag">CAM_05</span>
+                              <div class="vision-scan-box box-lane"></div>
+                            </div>
+                          </div>
+
+                          <!-- Glitch RGB Slice Overlay Container -->
+                          <div class="glitch-slice-box" id="glitch-slice-box"></div>
+                        </div>
+
+                        <!-- Uppercase Pill Caption Label -->
+                        <div class="carousel-caption-pill">
+                          <span class="caption-pulse"></span>
+                          <span class="caption-text" id="glitch-caption-text">VEHICLE_DETECTION: 99.4%</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card 02: GenAI & LLMs (Real-time Token Stream & Attention Telemetry) -->
+              <div class="accordion-item" data-index="2" data-cursor="hover">
+                <div class="accordion-header">
+                  <span class="item-num">02</span>
+                  <div class="item-title-group">
+                    <h3 class="item-title">Large Language Models &amp; GenAI</h3>
+                    <p class="item-short">Building context-aware AI chatbots and multilingual conversational systems.</p>
+                  </div>
+                  <div class="item-toggle-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7H9M17 7V15"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner vision-carousel-layout">
+                    <p class="body-desc">
+                      Integrating OpenAI GPT APIs and Prompt Engineering with Python to create conversational agents capable of real-time translation, context retention, and automated workflows.
+                    </p>
+
+                    <!-- LLM 3D Arc Carousel Component (Card 02) -->
+                    <div class="item-thumbnail-preview llm-carousel-preview">
+                      <div class="glitch-carousel-wrapper" id="llm-arc-carousel">
+                        <div class="carousel-arc-stage">
+                          <div class="carousel-card card-pos-0" data-pos="0">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-llm">ATTN_HEAD_01</span>
+                              <div class="vision-scan-box box-llm-matrix">
+                                <div class="matrix-grid-visual">
+                                  <span class="mg-cell c1"></span><span class="mg-cell c2"></span><span class="mg-cell c3"></span>
+                                  <span class="mg-cell c2"></span><span class="mg-cell c4"></span><span class="mg-cell c1"></span>
+                                  <span class="mg-cell c3"></span><span class="mg-cell c1"></span><span class="mg-cell c4"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-1" data-pos="1">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-llm">KV_CACHE</span>
+                              <div class="vision-scan-box box-llm-kv">
+                                <div class="kv-stream-visual">
+                                  <span class="kv-chip">[K: 128-D]</span>
+                                  <span class="kv-chip">[V: 128-D]</span>
+                                  <div class="kv-bar-track"><div class="kv-bar-fill"></div></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-2" data-pos="2">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-llm active-tag">GPT-4o_INFER</span>
+                              <div class="vision-scan-box box-llm-active">
+                                <div class="token-spark-visual">
+                                  <span class="spark-token">&gt; AUTONOMOUS</span>
+                                  <span class="spark-conf">CONF: 99.4%</span>
+                                  <div class="spark-beam"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-3" data-pos="3">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-llm">CHAIN_OF_THOUGHT</span>
+                              <div class="vision-scan-box box-llm-cot">
+                                <div class="cot-steps-visual">
+                                  <span class="cot-step s1">1. PARSE_CTX</span>
+                                  <span class="cot-arrow">↓</span>
+                                  <span class="cot-step s2">2. REASONING</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-4" data-pos="4">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-llm">SOFTMAX_LOGITS</span>
+                              <div class="vision-scan-box box-llm-softmax">
+                                <div class="softmax-bars-visual">
+                                  <span class="sm-bar b1"></span>
+                                  <span class="sm-bar b2"></span>
+                                  <span class="sm-bar b3"></span>
+                                  <span class="sm-bar b4"></span>
+                                  <span class="sm-bar b5"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="glitch-slice-box" id="llm-slice-box"></div>
+                        </div>
+                        <div class="carousel-caption-pill">
+                          <span class="caption-pulse cyan-pulse"></span>
+                          <span class="caption-text" id="llm-caption-text">AUTOREGRESSIVE_GEN: 480 T/S</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card 03: NLP (Semantic Vector Space & Sentiment Spectral Analyzer) -->
+              <div class="accordion-item" data-index="3" data-cursor="hover">
+                <div class="accordion-header">
+                  <span class="item-num">03</span>
+                  <div class="item-title-group">
+                    <h3 class="item-title">Natural Language Processing (NLP)</h3>
+                    <p class="item-short">Review summarization, sentiment extraction, and token classification.</p>
+                  </div>
+                  <div class="item-toggle-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7H9M17 7V15"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner vision-carousel-layout">
+                    <p class="body-desc">
+                      Implementing text preprocessing, semantic embeddings, and transformers (BERT, spaCy, NLTK) to distill massive unstructured text datasets into concise actionable summaries.
+                    </p>
+
+                    <!-- NLP 3D Arc Carousel Component (Card 03) -->
+                    <div class="item-thumbnail-preview nlp-carousel-preview">
+                      <div class="glitch-carousel-wrapper" id="nlp-arc-carousel">
+                        <div class="carousel-arc-stage">
+                          <div class="carousel-card card-pos-0" data-pos="0">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-nlp">BERT_768D</span>
+                              <div class="vision-scan-box box-nlp-bert">
+                                <div class="bert-vector-visual">
+                                  <span class="vec-axis-x"></span>
+                                  <span class="vec-axis-y"></span>
+                                  <span class="vec-point p1"></span>
+                                  <span class="vec-point p2"></span>
+                                  <span class="vec-point p3"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-1" data-pos="1">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-nlp">SPACY_NER</span>
+                              <div class="vision-scan-box box-nlp-ner">
+                                <div class="ner-tags-visual">
+                                  <span class="ner-chip tag-org">[ORG: AI_LAB]</span>
+                                  <span class="ner-chip tag-date">[DATE: 2026]</span>
+                                  <span class="ner-chip tag-loc">[LOC: GLOBAL]</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-2" data-pos="2">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-nlp active-tag">SEMANTIC_COSINE</span>
+                              <div class="vision-scan-box box-nlp-cosine">
+                                <div class="cosine-ray-visual">
+                                  <span class="cos-val">θ = 12.4°</span>
+                                  <span class="cos-metric">SIM: 0.942</span>
+                                  <div class="cos-arc-glow"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-3" data-pos="3">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-nlp">SENTIMENT_WAVE</span>
+                              <div class="vision-scan-box box-nlp-sentiment">
+                                <div class="sentiment-bars-visual">
+                                  <div class="sent-bars-row">
+                                    <span class="sent-bar s1"></span>
+                                    <span class="sent-bar s2"></span>
+                                    <span class="sent-bar s3"></span>
+                                    <span class="sent-bar s4"></span>
+                                  </div>
+                                  <span class="sent-badge">+96% POSITIVE</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-4" data-pos="4">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-nlp">BPE_TOKENIZER</span>
+                              <div class="vision-scan-box box-nlp-bpe">
+                                <div class="bpe-tiles-visual">
+                                  <span class="bpe-tile t1">trans_</span>
+                                  <span class="bpe-tile t2">form_</span>
+                                  <span class="bpe-tile t3">er</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="glitch-slice-box" id="nlp-slice-box"></div>
+                        </div>
+                        <div class="carousel-caption-pill">
+                          <span class="caption-pulse gold-pulse"></span>
+                          <span class="caption-text" id="nlp-caption-text">COSINE_SIMILARITY: 0.942</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card 04: Predictive ML (Real-time Pipeline & Loss Curve Convergence) -->
+              <div class="accordion-item" data-index="4" data-cursor="hover">
+                <div class="accordion-header">
+                  <span class="item-num">04</span>
+                  <div class="item-title-group">
+                    <h3 class="item-title">Predictive ML &amp; Data Engineering</h3>
+                    <p class="item-short">End-to-end predictive modeling, feature engineering, and SQL pipelines.</p>
+                  </div>
+                  <div class="item-toggle-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7H9M17 7V15"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-body-inner vision-carousel-layout">
+                    <p class="body-desc">
+                      Architecting tabular data pipelines, training classification/regression models with Scikit-learn, handling high-volume SQL databases, and containerizing with Docker.
+                    </p>
+
+                    <!-- ML 3D Arc Carousel Component (Card 04) -->
+                    <div class="item-thumbnail-preview ml-carousel-preview">
+                      <div class="glitch-carousel-wrapper" id="ml-arc-carousel">
+                        <div class="carousel-arc-stage">
+                          <div class="carousel-card card-pos-0" data-pos="0">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-ml">SQL_PIPELINE</span>
+                              <div class="vision-scan-box box-ml-sql">
+                                <div class="sql-pipe-visual">
+                                  <span class="sql-code">SELECT * DB</span>
+                                  <span class="sql-rate">100K ROWS/S</span>
+                                  <div class="sql-pulse-dots"><span></span><span></span><span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-1" data-pos="1">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-ml">FEATURE_STORE</span>
+                              <div class="vision-scan-box box-ml-feat">
+                                <div class="feat-hist-visual">
+                                  <span class="hist-bar h1"></span>
+                                  <span class="hist-bar h2"></span>
+                                  <span class="hist-bar h3"></span>
+                                  <span class="hist-bar h4"></span>
+                                  <span class="hist-label">4.8M TENSORS</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-2" data-pos="2">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-ml active-tag">LOSS_DESCENT</span>
+                              <div class="vision-scan-box box-ml-loss">
+                                <div class="mini-loss-visual">
+                                  <svg viewBox="0 0 100 45" class="mini-loss-svg">
+                                    <path d="M 0,38 Q 25,32 45,16 T 100,5" fill="none" stroke="#C9A876" stroke-width="2.5"/>
+                                    <circle cx="100" cy="5" r="3.5" fill="#00d2ff"/>
+                                  </svg>
+                                  <span class="mini-loss-tag">0.0182 (EP:120)</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-3" data-pos="3">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-ml">XGBOOST_TREES</span>
+                              <div class="vision-scan-box box-ml-tree">
+                                <div class="tree-nodes-visual">
+                                  <span class="t-node root">ROOT_SPLIT</span>
+                                  <div class="t-branches">
+                                    <span class="t-node c1">L_LEAF</span>
+                                    <span class="t-node c2">R_LEAF</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-card card-pos-4" data-pos="4">
+                            <div class="card-inner">
+                              <span class="hud-tag hud-ml">DOCKER_RUNTIME</span>
+                              <div class="vision-scan-box box-ml-docker">
+                                <div class="docker-gauge-visual">
+                                  <span class="dock-stat">INFER: 1.2ms</span>
+                                  <span class="dock-badge">BATCH: 64</span>
+                                  <div class="dock-bar-fill"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="glitch-slice-box" id="ml-slice-box"></div>
+                        </div>
+                        <div class="carousel-caption-pill">
+                          <span class="caption-pulse purple-pulse"></span>
+                          <span class="caption-text" id="ml-caption-text">LOSS_CONVERGE: 0.0182</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+<div class="skills-ribbon dark-section" aria-label="Skills in motion">
+<div class="section-container ribbon-heading"><span class="section-eyebrow">TOOLS I THINK &amp; BUILD WITH</span></div>
+<div class="skill-lane" data-row="0"><div class="skill-belt"></div></div><div class="skill-lane" data-row="1"><div class="skill-belt"></div></div>
+<div class="skill-project-links section-container" aria-label="Related projects"></div><p class="skill-insight section-container" aria-live="polite">Select a skill to explore how I use it.</p></div>
+    <!-- 6. WORK / PROJECTS SECTION (Near-black background, grid overlay) -->
+    <section id="work" class="project-lab dark-section">
+      <div class="section-container">
+        <div class="lab-heading"><span class="section-eyebrow">SELECTED WORK / 01—05</span><h2>Ideas, built<br>into <em>intelligence.</em></h2><div class="lab-intro"><p>Five explorations in computer vision, language and applied AI. Open a project to discover the idea—and try it in motion.</p><span class="lab-index">PROJECTS <span>↙</span></span></div><div class="lab-divider" aria-hidden="true"></div></div>
+        <div class="deck-stage" role="region" aria-label="Selected projects" aria-roledescription="carousel" tabindex="0"><div class="lab-grid">
+<article class="lab-card" style="--card-delay:0ms"><div class="lab-art"><img src="./assets/images/project-autopilot.webp" alt="Illustration for Tesla Autopilot Object Detection System" loading="lazy" width="1536" height="1024"><span class="lab-number">01 / 05</span></div><div class="lab-card-body"><span class="lab-category">COMPUTER VISION</span><h3>Tesla Autopilot Object Detection System</h3><p>Reading the road, one frame at a time.</p><button type="button" class="lab-open" data-project="autopilot" aria-haspopup="dialog">VIEW PROJECT <span aria-hidden="true">↗</span></button></div></article>
+<article class="lab-card" style="--card-delay:70ms"><div class="lab-art"><img src="./assets/images/project-translator.webp" alt="Illustration for Microsoft Translator AI Chatbot" loading="lazy" width="1536" height="1024"><span class="lab-number">02 / 05</span></div><div class="lab-card-body"><span class="lab-category">LANGUAGE AI</span><h3>Microsoft Translator AI Chatbot</h3><p>Ideas travel further without language barriers.</p><button type="button" class="lab-open" data-project="translator" aria-haspopup="dialog">VIEW PROJECT <span aria-hidden="true">↗</span></button></div></article>
+<article class="lab-card" style="--card-delay:140ms"><div class="lab-art"><img src="./assets/images/project-traffic.webp" alt="Illustration for Smart AI Traffic Light & Vehicle Monitor" loading="lazy" width="1536" height="1024"><span class="lab-number">03 / 05</span></div><div class="lab-card-body"><span class="lab-category">INTELLIGENT MOBILITY</span><h3>Smart AI Traffic Light & Vehicle Monitor</h3><p>Less waiting. More intelligent intersections.</p><button type="button" class="lab-open" data-project="traffic" aria-haspopup="dialog">VIEW PROJECT <span aria-hidden="true">↗</span></button></div></article>
+<article class="lab-card" style="--card-delay:210ms"><div class="lab-art"><img src="./assets/images/project-resume.webp" alt="Illustration for AI Resume Analyzer & Job Matcher" loading="lazy" width="1536" height="1024"><span class="lab-number">04 / 05</span></div><div class="lab-card-body"><span class="lab-category">APPLIED NLP</span><h3>AI Resume Analyzer & Job Matcher</h3><p>Turn experience into a clearer match.</p><button type="button" class="lab-open" data-project="resume" aria-haspopup="dialog">VIEW PROJECT <span aria-hidden="true">↗</span></button></div></article>
+<article class="lab-card" style="--card-delay:280ms"><div class="lab-art"><img src="./assets/images/project-reviews.webp" alt="Illustration for Airbnb Customer Review Summarizer" loading="lazy" width="1536" height="1024"><span class="lab-number">05 / 05</span></div><div class="lab-card-body"><span class="lab-category">TEXT INTELLIGENCE</span><h3>Airbnb Customer Review Summarizer</h3><p>Many guest opinions. One useful overview.</p><button type="button" class="lab-open" data-project="reviews" aria-haspopup="dialog">VIEW PROJECT <span aria-hidden="true">↗</span></button></div></article>
+</div></div><div class="deck-controls"><button type="button" id="deck-previous" aria-label="Previous project">←</button><div id="deck-dots" class="deck-dots"></div><button type="button" id="deck-next" aria-label="Next project">→</button><span id="deck-status" role="status" aria-live="polite"></span></div><p class="deck-hint">Hover to unfold · Swipe, drag or use the arrows · Open a project to explore</p><div class="lab-end"><span>FROM CONCEPT TO INTERACTION</span><a href="#credentials">Explore my credentials ↓</a></div></div>
+    </section>
+
+    <dialog id="project-dialog" class="project-dialog" data-lenis-prevent aria-labelledby="project-dialog-title"><div class="project-dialog-top"><span>PROJECT EXPLORER</span><button type="button" id="project-close" aria-label="Close project">CLOSE ×</button></div><div class="project-dialog-grid"><div class="project-story"><span id="project-category" class="lab-category"></span><h2 id="project-dialog-title"></h2><p id="project-description"></p><h3>THE WORKFLOW</h3><ol id="project-steps"></ol><div id="project-stack" class="project-stack"></div><p id="project-note" class="project-note"></p></div><div class="project-playground"><div class="playground-heading"><span class="demo-light"></span><span>INTERACTIVE DEMO</span></div><div id="project-demo"></div></div></div></dialog>
+    
+        <section id="credentials" class="credential-section dark-section">
+      <div class="credential-pin section-container">
+        <div class="credential-heading"><div><span class="section-eyebrow">04 — LEARNING, MADE VISIBLE</span><h2 class="section-title">Credentials<span class="title-dot">.</span></h2></div>
+          <div class="credential-filter" role="group" aria-label="Filter credentials"><i class="filter-indicator" aria-hidden="true"></i><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="certificate" aria-pressed="false">Certificates</button><button type="button" data-filter="award" aria-pressed="false">Awards</button></div>
+        </div>
+        <div class="credential-stats" aria-label="Credential totals"><span><b data-count="all">6</b> recognitions</span><span><b data-count="certificate">4</b> certificates</span><span><b data-count="award">2</b> awards</span></div>
+        <div class="credential-viewport" aria-label="Certificates and awards"><div class="credential-track">
+          <div class="certificate-panel" data-type="certificate"><div class="panel-kicker"><span>01 / CONTINUOUS LEARNING</span><span class="stack-count" aria-live="polite">1 / 4</span></div><div class="certificate-deck" aria-label="Certificate deck"></div><div class="credential-deck-controls"><button type="button" class="credential-prev" aria-label="Previous certificate">←</button><span>Drag to explore · Select to view</span><button type="button" class="credential-next" aria-label="Next certificate">→</button></div></div>
+          <div class="award-panel" data-type="award"><div class="panel-kicker">02 / IDEAS THAT RESONATED</div><div class="award-shelf"></div></div>
+        </div></div>
+        <div class="credential-progress" aria-hidden="true"><i></i></div>
+        <div class="brand-marquee" aria-label="AWS, Cisco, IBM, GUVI and HCLTech"><div><span>AWS</span><span>CISCO</span><span>IBM</span><span>GUVI</span><span>HCLTech</span><span aria-hidden="true">AWS</span><span aria-hidden="true">CISCO</span><span aria-hidden="true">IBM</span><span aria-hidden="true">GUVI</span><span aria-hidden="true">HCLTech</span></div></div>
+        <p class="credential-education">B.Sc. Computer Science (2028) · Manakula Vinayagar Institute of Technology, Puducherry<br>English · Hindi · Tamil</p>
+      </div>
+    </section>
+    <section id="contact" class="connect-section dark-section">
+      <div class="connect-mesh" aria-hidden="true"></div><div class="connect-shapes" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="section-container contact-title-film"><h2 class="sr-only">Let’s create something intelligent.</h2><picture class="contact-push-animation"><source media="(prefers-reduced-motion: reduce)" srcset="./assets/images/contact-push-still.webp"><img data-animation="./assets/images/contact-push.webp" src="./assets/images/contact-push-still.webp" width="800" height="450" loading="eager" alt="3D character pushing Let’s create something intelligent into the center"></picture><span class="contact-title-ripple" aria-hidden="true"></span></div><div class="section-container connect-layout">
+        <div class="connect-copy"><span class="section-eyebrow">05 — GOOD THINGS START WITH A CONVERSATION</span><h2 class="connect-title" aria-label="Let's Connect">Let's<br>Connect<span>.</span></h2>
+          <p class="connect-intro">Have a role, a project, or an idea in mind?<br>I'd love to hear about it.</p>
+          <div class="connect-rows"><button type="button" class="connect-row email-copy" data-magnetic aria-label="Copy email address"><span class="contact-social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 6 10 7 10-7"/></svg></span><span class="contact-row-copy"><small>EMAIL</small>shamanand1358@gmail.com</span><i aria-hidden="true">↗</i></button><a class="connect-row" data-magnetic href="https://linkedin.com/in/sham-anand" target="_blank" rel="noopener"><span class="contact-social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 9v12M5 4v1M11 21V9m0 5c0-7 9-7 9 0v7"/></svg></span><span class="contact-row-copy"><small>LINKEDIN</small>Let's connect professionally</span><i aria-hidden="true">↗</i></a><a class="connect-row" data-magnetic href="https://github.com/sha-03" target="_blank" rel="noopener"><span class="contact-social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 21v-4c-5 0-6-8-3-10L5 3l5 2h4l5-2v4c3 2 2 10-3 10v4M8 19c-5 2-4-4-7-3"/></svg></span><span class="contact-row-copy"><small>GITHUB</small>Explore the source</span><i aria-hidden="true">↗</i></a><div class="connect-row location-row"><span><small>BASED IN</small>Karaikal, Puducherry</span><time id="ist-clock" aria-label="Current time in India"></time></div></div>
+        </div>
+        <div class="connect-form-wrap"><div class="form-peek" aria-hidden="true"><img src="./assets/images/contact-avatar-cutout.png" alt="" width="1024" height="1536"></div>
+          <form id="craft-contact-form" class="connect-form" novalidate><div class="form-top"><span>YOUR NEXT GOOD IDEA</span><span aria-hidden="true">↙</span></div><h3>Make the first move.</h3>
+            <div class="craft-field"><input id="connect-name" name="name" autocomplete="name" placeholder=" " required minlength="2" maxlength="100" aria-describedby="name-error"><label for="connect-name">Your name</label><span class="field-check" aria-hidden="true"></span><p class="field-error" id="name-error"></p></div>
+            <div class="craft-field"><input id="connect-email" name="email" type="email" autocomplete="email" placeholder=" " required maxlength="254" aria-describedby="email-error"><label for="connect-email">Email address</label><span class="field-check" aria-hidden="true"></span><p class="field-error" id="email-error"></p></div>
+            <div class="craft-field message-field"><textarea id="connect-message" name="message" rows="4" placeholder=" " required minlength="10" maxlength="1000" aria-describedby="message-error message-count"></textarea><label for="connect-message">Tell me a little about it</label><span class="field-check" aria-hidden="true"></span><p class="field-error" id="message-error"></p><div class="message-counter"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><circle class="count-progress" cx="16" cy="16" r="13"/></svg><span id="message-count">0 / 1000</span></div></div>
+            <button class="craft-submit" type="submit" data-magnetic><span class="submit-label">Let's talk</span><span class="submit-icon" aria-hidden="true">↗</span></button><p class="form-delivery">Opens your email app with a draft. You send it from there.</p><p id="connect-status" role="status" aria-live="polite"></p><a id="draft-fallback" hidden>Open email draft ↗</a>
+          </form>
+        </div>
+      </div><div class="copy-toast" role="status" aria-live="polite"></div>
+    </section>
+</main><dialog id="credential-dialog" class="craft-dialog" aria-labelledby="credential-title"><button class="dialog-close" aria-label="Close credential details">×</button><span id="credential-kind" class="section-eyebrow"></span><p id="credential-issuer"></p><h2 id="credential-title"></h2><p id="credential-description"></p><h3>What I explored</h3><div id="credential-skills" class="skill-badges"></div><p id="credential-year"></p><a id="credential-view" class="craft-button" target="_blank" rel="noopener">View credential ↗</a><p id="credential-placeholder" class="field-note">Verification URL to be added.</p><a id="credential-asset" target="_blank" rel="noopener" hidden>Open supplied certificate ↗</a><img id="credential-preview" alt="Certificate preview" hidden></dialog>
+
+  <!-- FOOTER -->
+  <footer class="craft-footer"><p class="footer-wordmark">Sham.A</p><div class="footer-meta"><p>© 2026 Sham Anand · Karaikal, Puducherry</p><a class="back-top" href="#hero" aria-label="Back to top"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><circle class="top-progress" cx="24" cy="24" r="21"/></svg><span>↑</span>Back to top</a></div></footer>
+
+  <!-- CDN Scripts: Lenis for Smooth Scrolling & GSAP + ScrollTrigger for Animations -->
+  
+  
+  
+
+  <!-- Application Script -->
+  
+<script src="./assets/js/app.js" defer></script></body>
+</html>
